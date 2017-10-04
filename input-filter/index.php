@@ -19,7 +19,6 @@
 			margin-left: auto;
 			width: 80%;
 			padding: 10px;
-			display: flex;
 		}
 
 		input[type=text]{
@@ -27,7 +26,14 @@
 			padding: 10px;
 		}
 
-		.key_input{			
+		table, tr, th, td{	
+		border: 1px solid #000;
+		border-collapse: collapse;	
+		padding: 10px;	
+		}
+
+		table{
+			width: 100%;
 		}
 
 		.filter_container{
@@ -80,16 +86,11 @@
 <body>
 
 	<div class="filter_container">
-	<form method="post" action="index.php">
 		<div class="search_sec">
 			<span class="filter_fixedTxt">Search</span>
-			<input type="text" name="key_input" class="key_input" value="">
+			<input type="text" name="key_input" class="key_input" value=""/>
+			<div id="display_sec"></div>
 		</div>
-	</form>
-	</div>
-
-	<div>
-		<p id="display_sec"></p>
 	</div>
 </body>
 </html>
